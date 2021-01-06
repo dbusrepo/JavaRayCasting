@@ -1,37 +1,41 @@
 package raycasting;
 
-import base.graphics.app.GraphicsApplication;
+import base.graphics.app.GraphApp;
 import base.graphics.app.Settings;
 
-public class Main extends GraphicsApplication {
+public class Main extends GraphApp {
 
-	public Main() {
+	public Main() throws Exception {
 		Settings settings = new Settings();
 		settings.title = "Java Ray Casting";
 		start(settings);
 	}
 
-	@Override
-	protected void appInit() {
-
-	}
-
-	@Override
-	protected void appUpdate(long elapsedTime) {
-
-	}
-
-	@Override
-	protected void appFinishOff() {
-
-	}
-
-	@Override
-	protected void appPrintFinalStats() {
-
-	}
-
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		new Main();
+	}
+
+	@Override
+	public void initApp() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateApp(long elapsedTime) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void finishOffApp() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void printFinalStatsApp() {
+		// TODO Auto-generated method stub
+
 	}
 }
